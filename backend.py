@@ -30,7 +30,7 @@ KVUri = f"https://{keyVaultName}.vault.azure.net"
 credential = DefaultAzureCredential()
 client = SecretClient(vault_url=KVUri, credential=credential)
 
-DB_NAME = client.get_secret('PROJ-DB-NAME').value
+DB_NAME = client.get_secret('PROJ-DB-NAME-2').value
 DB_USER = client.get_secret('PROJ-DB-USER').value
 DB_PASSWORD = client.get_secret('PROJ-DB-PASSWORD').value
 DB_HOST = client.get_secret('PROJ-DB-HOST').value
